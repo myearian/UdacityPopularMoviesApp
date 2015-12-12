@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context="com.udacitynanodegree.popularmovies.DetailActivityFragment"
+        tools:showIn="@layout/activity_detail">
+
+        <ImageView
+            android:id="@+id/posterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:id="@+id/releaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/posterView"
+            android:paddingTop="30dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/userRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/releaseDate"
+            android:layout_toRightOf="@id/posterView"
+            android:paddingTop="30dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/posterView"
+            android:layout_centerHorizontal="true"
+            android:background="@color/mainBackgroundColor"
+            android:padding="5px"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/movieTitle"
+            android:layout_centerHorizontal="true"
+            android:background="@color/mainBackgroundColor"
+            android:padding="5px"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+</ScrollView>
